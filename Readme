@@ -1,0 +1,19 @@
+= WTF?
+
+I just want to point out that this is a major hack. I've been taking a lot of notes on my phone lately using Evernote, and the phone doesn't support rich text. My solution was to tag a note "convert" and use textile, then use a cron job or similar to convert the texts into rich for when i need to use them later on. one of the best things about evernote is the embeddable todo tags, so those are supported. (see the usage)
+
+Thats about it. It finds all notes tagged 'convert' and passes them through RedCloth and updates them in Evernote via the API. Nothing else to see here :)
+
+== Usage
+
+* Basic textile
+* [x] for a checked off TODO
+* [ ] for a non-checked off TODO
+
+== Big Thanks
+
+* Chris Sepic <http://github.com/cgs> for helping me get the gist of the Evernote API in ruby. (I will modify in the future to use your gem.)
+
+Author:: Rob Hurring <rob@ubrio.us>
+Date:: 9/8/2010
+License:: DWTFYWWI
