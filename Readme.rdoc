@@ -1,6 +1,8 @@
 = WTF?
 
-I just want to point out that this is a major hack. I've been taking a lot of notes on my phone lately using Evernote, and the phone doesn't support rich text. My solution was to tag a note "convert" and use textile, then use a cron job or similar to convert the texts into rich for when i need to use them later on. one of the best things about evernote is the embeddable todo tags, so those are supported. (see the usage)
+I just want to point out that this is a major hack, so it might not work without some TLC (or if the API changes). The big point of this is that I wanted to see if it was possible/plausable to take notes in plain text and use a script to convert them for easier viewing on the desktop client.
+
+I've been taking a lot of notes on my phone lately using Evernote, and the phone doesn't support rich text. My solution was to tag a note "convert" and use textile, then use a cron job or similar to convert the texts into rich for when i need to use them later on. one of the best things about evernote is the embeddable todo tags, so those are supported. (see the usage)
 
 Thats about it. It finds all notes tagged 'convert' and passes them through RedCloth and updates them in Evernote via the API. Nothing else to see here :)
 
