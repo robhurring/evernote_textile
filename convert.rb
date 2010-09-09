@@ -22,6 +22,30 @@ require 'lib/evernote/evernote'
 require 'RedCloth'
 require 'nokogiri'
 
+# whitelist the HTML tags so we don't go nuts.
+# Thanks: http://jeff.jones.be/technology/articles/textile-filtering-with-redcloth/
+module RedCloth::Formatters::HTML
+  include RedCloth::Formatters::Base
+  
+  def after_transform(text)
+    text.chomp!
+    clean_html(text, ALLOWED_TAGS)
+  end
+  
+  ALLOWED_TAGS = {
+      'i' => nil,
+      'u' => nil,
+      'b' => nil,
+      'pre' => nil,
+      'code' => nil,
+      'strong' => nil,
+      'em' => nil,
+      'ins' => nil,
+      'del' => nil,
+      'p' => nil
+    }
+end
+
 convert_tag_name = 'convert'
 convert_tag_guid = nil
 
