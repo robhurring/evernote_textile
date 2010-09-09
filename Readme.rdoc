@@ -10,6 +10,14 @@ Thats about it. It finds all notes tagged 'convert' and passes them through RedC
 * [x] for a checked off TODO
 * [ ] for a non-checked off TODO
 
+=== Example Text Document
+
+  Hello *world* you're using _markdown_ in plain text! If you -want- must, you can tag this note with "convert"
+  and run the +convert.rb+ script to use Evernotes API to convert textile into HTML for rich formatted notes!
+  
+  [x] Describe whats going on with this
+  [ ] Try it out!
+
 == Big Thanks
 
 * Chris Sepic <http://github.com/cgs> for helping me get the gist of the Evernote API in ruby. (I will modify in the future to use your gem.)
